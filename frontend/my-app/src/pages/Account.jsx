@@ -164,46 +164,50 @@ export function Account() {
 
   if (!isAuthenticated) {
     return (
-      <div className="account-auth">
-        <h2>{isRegistering ? 'Регистрация' : 'Вход в аккаунт'}</h2>
+      <section className="section-account">
+        <div className="container">
+          <div className="account-auth">
+            <h2>{isRegistering ? 'Регистрация' : 'Вход в аккаунт'}</h2>
 
-        <input
-          type="text"
-          name="login"
-          value={userData.login}
-          onChange={handleInputChange}
-          placeholder="Логин"
-        />
+            <input
+              type="text"
+              name="login"
+              value={userData.login}
+              onChange={handleInputChange}
+              placeholder="Логин"
+            />
 
-        <input
-          type="email"
-          name="email"
-          value={userData.email}
-          onChange={handleInputChange}
-          placeholder="Email"
-        />
+            <input
+              type="email"
+              name="email"
+              value={userData.email}
+              onChange={handleInputChange}
+              placeholder="Email"
+            />
 
-        <input
-          type="password"
-          name="password"
-          value={userData.password}
-          onChange={handleInputChange}
-          placeholder="Пароль"
-        />
+            <input
+              type="password"
+              name="password"
+              value={userData.password}
+              onChange={handleInputChange}
+              placeholder="Пароль"
+            />
 
-        <button onClick={handleAuth} disabled={isLoading}>
-          {isLoading ? 'Загрузка...' : isRegistering ? 'Зарегистрироваться' : 'Войти'}
-        </button>
+            <button onClick={handleAuth} disabled={isLoading}>
+              {isLoading ? 'Загрузка...' : isRegistering ? 'Зарегистрироваться' : 'Войти'}
+            </button>
 
-        <p>
-          {isRegistering ? 'Уже есть аккаунт? ' : 'Нет аккаунта? '}
-          <button onClick={() => setIsRegistering(!isRegistering)}>
-            {isRegistering ? 'Войти' : 'Зарегистрироваться'}
-          </button>
-        </p>
+            <p>
+              {isRegistering ? 'Уже есть аккаунт? ' : 'Нет аккаунта? '}
+              <button onClick={() => setIsRegistering(!isRegistering)}>
+                {isRegistering ? 'Войти' : 'Зарегистрироваться'}
+              </button>
+            </p>
 
-        {message && <p className="message">{message}</p>}
-      </div>
+            {message && <p className="message">{message}</p>}
+          </div>
+        </div>  
+      </section>
     );
   }
 

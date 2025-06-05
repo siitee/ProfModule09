@@ -1,3 +1,9 @@
+.section-account {
+  background-color: none !important;
+  margin-top: 80px;
+  height: 80vh;
+}
+
 .account-auth, .account-page {
   max-width: 500px;
   margin: 40px auto;
