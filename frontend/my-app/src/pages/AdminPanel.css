@@ -1,0 +1,33 @@
+.section.section-admin {
+  margin-top: 80px;
+  min-height: 80vh;
+}
+
+.admin-content {
+  text-align: center;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.admin-link {
+  display: block;
+  background-color: #fffdf5;
+  color: #000000; /* насыщенный синий */
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.admin-link:hover {
+  background-color: #fcf9ed;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,34 @@
+/* Адаптивность */
+@media (max-width: 768px) {
+  .product-page {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-controls {
+    flex-direction: column;
+  }
+
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+    border: none;
+  }
+
+  .tab-btn {
+    border-bottom: 1px solid #ddd;
+  }
+}

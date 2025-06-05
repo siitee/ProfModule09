@@ -1,0 +1,39 @@
+.footer {
+  background-color: #2e5f42;
+  padding: 3rem 1rem 1.5rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+}

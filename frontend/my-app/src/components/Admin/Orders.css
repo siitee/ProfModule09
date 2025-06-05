@@ -1,0 +1,32 @@
+.section-orders {
+  margin-top: 80px;
+  height: 80vh;
+}
+
+.orders-container {
+  padding: 40px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #fffdf5;
+  color: #fffdf5;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.orders-table__text {
+  color: #2e5f42 !important;
+}
+
+.orders-table th {
+  background-color: #fffdf5;
+}
